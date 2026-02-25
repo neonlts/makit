@@ -1,0 +1,13 @@
+{
+  "name": "makit",
+  "version": "0.1.0",
+  "dependencies": [
+    "argparse",
+    {
+      "name": "blake3",
+      "features": [
+        "tbb"
+      ]
+    }
+  ]
+}

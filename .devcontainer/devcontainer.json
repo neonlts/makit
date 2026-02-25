@@ -1,0 +1,15 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "devuser",
+  "postCreateCommand": [
+    "git config --global --add safe.directory '*'",
+    "ccache --max-size=5G"
+  ],
+  "containerEnv": {
+    "CC": "clang",
+    "CXX": "clang++"
+  }
+}
